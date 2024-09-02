@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dNetWkhtmlWrap", "dNETwkhtmlWrap\dNetWkhtmlWrap.csproj", "{DA4118D8-C50F-4EE4-917D-EE3C3AAEB7AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{67B98439-9E5E-4DE6-B439-DA87D8655E24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dNetWkhtmlWrap.Tests", "Tests\dNETwkhtmlWrap.Tests\dNetWkhtmlWrap.Tests.csproj", "{4F9B60D3-51A1-47D9-9C1F-F190F9E38FB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WkWrapper.WkhtmlToX.Mxe", "WkWrapper.WkhtmlToX.Mxe\WkWrapper.WkhtmlToX.Mxe.csproj", "{C17F72E1-7BA5-4154-AC2E-90F67AACCDDE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{4DDC2C02-3689-4899-B33F-16A1188066FF}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+		ReadMe.txt = ReadMe.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WkWrapper.WkhtmlToPdf.Mxe", "WkWrapper.WkhtmlToPdf.Mxe\WkWrapper.WkhtmlToPdf.Mxe.csproj", "{A0DD6EF6-4D16-4C79-9637-B80B5CB37495}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA4118D8-C50F-4EE4-917D-EE3C3AAEB7AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA4118D8-C50F-4EE4-917D-EE3C3AAEB7AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA4118D8-C50F-4EE4-917D-EE3C3AAEB7AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA4118D8-C50F-4EE4-917D-EE3C3AAEB7AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F9B60D3-51A1-47D9-9C1F-F190F9E38FB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F9B60D3-51A1-47D9-9C1F-F190F9E38FB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F9B60D3-51A1-47D9-9C1F-F190F9E38FB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F9B60D3-51A1-47D9-9C1F-F190F9E38FB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C17F72E1-7BA5-4154-AC2E-90F67AACCDDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C17F72E1-7BA5-4154-AC2E-90F67AACCDDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C17F72E1-7BA5-4154-AC2E-90F67AACCDDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C17F72E1-7BA5-4154-AC2E-90F67AACCDDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0DD6EF6-4D16-4C79-9637-B80B5CB37495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0DD6EF6-4D16-4C79-9637-B80B5CB37495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0DD6EF6-4D16-4C79-9637-B80B5CB37495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0DD6EF6-4D16-4C79-9637-B80B5CB37495}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4F9B60D3-51A1-47D9-9C1F-F190F9E38FB6} = {67B98439-9E5E-4DE6-B439-DA87D8655E24}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B01FCA10-7D06-4A34-B8F2-0EF11CF53CB0}
+	EndGlobalSection
+EndGlobal
