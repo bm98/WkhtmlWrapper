@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>dNetWkhtmlWrap</RootNamespace>
-    <AssemblyName>WkWrapper.WkhtmlToPdf.Mxe</AssemblyName>
+    <AssemblyName>bm98.WkWrapper.WkhtmlToPdf.Mxe</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -21,7 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\WkWrapper.WkhtmlToPdf.Mxe.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\bm98.WkWrapper.WkhtmlToPdf.Mxe.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -30,7 +30,17 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\WkWrapper.WkhtmlToPdf.Mxe.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\bm98.WkWrapper.WkhtmlToPdf.Mxe.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'PacketRelease|AnyCPU'">
+    <OutputPath>bin\PacketRelease\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\bm98.WkWrapper.WkhtmlToPdf.Mxe.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -60,10 +70,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wkhtmltopdf_exe_64-V12.6.0.gz" />
+    <None Include="WkWrapper.WkhtmlToPdf.Mxe.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>if $(ConfigurationName) == Release copy $(TargetDir)*.* $(SolutionDir)..\Redist\
-if $(ConfigurationName) == Release del $(SolutionDir)..\Redist\*.tmp</PostBuildEvent>
+    <PostBuildEvent>if $(ConfigurationName) == Release xcopy /Y $(TargetDir)$(TargetName).* $(SolutionDir)..\Lib\$(SolutionName)\
+if $(ConfigurationName) == Release del $(SolutionDir)..\Lib\$(SolutionName)\*.tmp
+
+if $(ConfigurationName) == PacketRelease E:\D\Nuget\ngRel.cmd $(ProjectDir)</PostBuildEvent>
   </PropertyGroup>
 </Project>

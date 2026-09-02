@@ -13,7 +13,7 @@ namespace dNetWkhtmlWrap
     /// <summary>
     /// Base Path for the Deployment Item
     /// </summary>
-    public string Path { get; private set; }
+    public string Path { get; private set; } = string.Empty;
 
     /// <summary>
     /// We shall not remove anything from the static path given by the user

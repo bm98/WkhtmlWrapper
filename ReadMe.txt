@@ -1,5 +1,5 @@
-dNETwkhtmlWrap V 0.1 - Build 1
-(c) M. Burri - 22-Aug-2024
+dNETwkhtmlWrap V 0.7 - Build 7
+(c) M. Burri - 02-Sep-2026
 
 
 For Updates and information visit:
@@ -10,6 +10,8 @@ Scanned for viruses before packing...
 github@burri-web.org
 
 Changelog:
+
+V 0.7 don't deploy but distribute the exe (Windows SAC issue)
 
 V 0.1 initial for preview
 

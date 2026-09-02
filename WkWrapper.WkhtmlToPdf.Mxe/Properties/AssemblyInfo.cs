@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("WkWrapper.WkhtmlToPdf.Mxe")]
+[assembly: AssemblyTitle( "bm98.WkWrapper.WkhtmlToPdf.Mxe" )]
 [assembly: AssemblyDescription( "Deploys wkhtmltopdf.exe" )]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany( "M.Burri" )]
 [assembly: AssemblyProduct("WkWrapper.WkhtmlToPdf.Mxe")]
-[assembly: AssemblyCopyright( "Copyright ©  2024 M.Burri" )]
+[assembly: AssemblyCopyright( "Copyright ©  2024 M.Burri, wkhtml authors" )]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion( "0.12.6.0" )]
-[assembly: AssemblyFileVersion( "0.12.6.0" )]
+[assembly: AssemblyVersion( "0.13.7.0" )]
+[assembly: AssemblyFileVersion( "0.13.7.0" )]

@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 
 using System.Diagnostics;
 using System.IO;
-using System.Reflection;
 using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting.Logging;
 
@@ -339,7 +338,7 @@ namespace dNetWkhtmlWrap.Tests
     {
       WkWrapper wrapper;
       // will throw in cTor of WkWrapper
-      Assert.ThrowsException<ArgumentNullException>(
+      Assert.Throws<ArgumentNullException>(
         ( ) => { wrapper = WkWrapperFactory.Create( null ); } );
     }
 
@@ -355,7 +354,7 @@ namespace dNetWkhtmlWrap.Tests
       var wrapper = WkWrapperFactory.Create( invalid_deployment );
       // using local resources to not depend on WebSite loading 
       // will throw in cTor of the Runner due to not existing exe file and then propagated to the caller
-      Assert.ThrowsException<ArgumentException>(
+      Assert.Throws<ArgumentException>(
         ( ) => { wrapper.ConvertChecked( Document( StringObject( ) ), out string outFile ); } );
     }
 

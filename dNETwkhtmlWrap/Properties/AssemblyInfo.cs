@@ -5,10 +5,10 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle( "dNetWkhtmlWrap" )]
+[assembly: AssemblyTitle( "bm98.dNetWkhtmlWrap" )]
 [assembly: AssemblyDescription( "Wrapper for WkHtmlToPdf/Image for .NetFramework" )]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany( "M.Burri" )]
 [assembly: AssemblyProduct( "dNetWkhtmlWrap" )]
 [assembly: AssemblyCopyright( "Copyright ©  2024 M.Burri. parts from TuesPechkin" )]
 [assembly: AssemblyTrademark("")]
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion( "0.1.0.1" )]
-[assembly: AssemblyFileVersion( "0.1.0.1" )]
+[assembly: AssemblyVersion( "1.0.7.0" )]
+[assembly: AssemblyFileVersion( "1.0.7.0" )]

@@ -318,7 +318,7 @@ namespace dNetWkhtmlWrap.Tests
 
       // convert to Image
       // MUST FAIL WITH ArgumentException
-      Assert.ThrowsException<ArgumentException>(
+      Assert.Throws<ArgumentException>(
          ( ) => { wrapper.ConvertChecked( SimpleH2Ipng_Document( ), out outFile ); } );
 
       wrapper.Deployment.CleanEmbeddedDeployment( );
